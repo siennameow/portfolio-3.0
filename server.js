@@ -3,22 +3,32 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs')
 
-
 // Sets up the Express App
 const app = express();
-const PORT = process.env.PORT || 3001;
+var PORT =  process.env.PORT || 3001;
+
 // Sets up the Express app to handle data parsing
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 
 app.use(express.static('public'));
 
-//API Routes
+//Routes
+//GET route render the main html page
+app.get("/", function(req, res){
+  res.sendFile(path.join(__dirname, 'public/index.html'));
+});
 
-//GET * should return the index.html file.
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public/index.html'));
-  });
+//GET /blog route go to the blog page
+app.get("/blog", function(req, res){
+  res.redirect(200, "");
+});
+
+//GET /downloads render the resume download.
+app.get("/downloads", function(req, res){
+  res.download('');
+
+});
 
 // Listener
 app.listen(PORT, () => console.log(`App listening on PORT ${PORT}`));

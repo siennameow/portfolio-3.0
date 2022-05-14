@@ -1,24 +1,294 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html class="no-js" lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>Sienna Li Personal Website</title>
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.3/flatly/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Portfolio 3.0</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Anton&family=Caveat&family=Gloria+Hallelujah&family=Gochi+Hand&family=Indie+Flower&family=Kaushan+Script&family=Monoton&family=Original+Surfer&family=Righteous&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.3/flatly/bootstrap.min.css" />
-  <link rel="stylesheet" href="./assets/css/styles.css" />
-</head>
+  <body>
+    <!-- Loader -->
+    <div class="page-loader">
+      <div class="line-scale">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+        <div class="line line4"></div>
+        <div class="line line5"></div>
+      </div>
+    </div>
 
-<body>
-<div>
-    My portfolio
-</div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <!-- <script src=""></script> -->
-</body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar">
+        <div class="container fixed-top">
+          <a href="#" class="menu-btn-open">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+          </a>
+        </div>
+      </nav>
+    </header>
 
+    <!-- Lightbox menu -->
+    <div class="menu-lightbox">
+      <div class="container">
+        <div class="row">
+          <a href="#" class="menu-btn-close">
+            <span class="line1"></span>
+            <span class="line2"></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="tbl">
+        <div class="tbl-cell">
+          <!-- Menu -->
+          <ul class="menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Project</a></li>
+            <li><a href="https://medium.com/@siennameow">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Intro -->
+    <div id="welcome" class="intro image-bg">
+      <!-- Text slider -->
+      <div class="intro-text">
+        <div class="container">
+          <div class="row">
+            <span>I’m </span>
+            <span class="words-wrapper">
+              <b class="is-visible">Sienna</b>
+              <b>A Web Developer</b>
+              <b>A Explorer</b>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll button -->
+      <div class="scroll-downs scroll-btn">
+        <a class="scroller" href="#about">
+          <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- About -->
+    <section id="about" class="about sec-pad waypoint">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <!-- Section title -->
+            <div class="section-title">
+              <!--<span class="waypoint"></span>-->
+              <h1>About Me</h1>
+              <p>Web developer, musician, cat mom.</p>
+            </div>
+
+            <p>
+                Hello there! I'm a web developer and designer based in San Francisco Bay Area. 
+                Having spent a large chunk of my life in arts and music, I've finally found my passion at the web design and technology. I'm an exceptionally creative and dependable entry Level Web Developer with a stellar customer service record and superb work ethic. Broadly and deeply knowledgeable in a wide variety of computer languages as well as the principles and techniques of website construction and maintenance. Highly adept at conveying complex technical information to a variety of professional and lay audiences in a clear and understandable manner.
+                Currently, I spend most of my time designing websites and participating in the <a href="https://goo.gl/jhil8F" target="_blank">#100DaysOfCode</a> challenge to keep my skills sharp. When I'm not busy, you can find me obsessing over food and cats, or working on one of my many hobbies like fashion blogging and traveling. 
+            </p>
+
+            <a href="/downloads/resume-siennali.pdf" class="btn">
+              <i class="fa fa-download"></i> Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills sec-pad alter-bg">
+      <div class="container">
+        <div class="row">
+          <!-- Section title -->
+          <div class="section-title text-center col-md-12">
+            <h1>My Skills</h1>
+            <p>Here are a few of the technologies I've used over the years:</p>
+          </div>
+
+          <div class="clearfix"></div>
+
+          <div class="container">
+            <div class="container skills">
+              <div class="row">
+                <div class="col-lg-4 col-xs-12">
+                  <div class="premiere-progress skill-font">Frontend Development</div>
+                </div>
+                <div class="col-lg-4 col-xs-12">
+                  <div class="ae-progress skill-font">Backend Development</div>
+                </div>
+                <div class="col-lg-4 col-xs-12">
+                  <div class="blender-progress skill-font">Full Stack Development</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-4 col-xs-12">
+                  <div class="html-progress skill-font">HTML</div>
+                </div>
+                <div class="col-lg-4 col-xs-12">
+                  <div class="css-progress skill-font">CSS</div>
+                </div>
+                <div class="col-lg-4 col-xs-12">
+                  <div class="js-progress skill-font">JavaScript</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-4 col-xs-12">
+                  <div class="node-progress skill-font">Node.js</div>
+                </div>
+                <div class="col-lg-4 col-xs-12">
+                  <div class="express-progress skill-font">SQL</div>
+                </div>
+                <div class="col-lg-4 col-xs-12">
+                  <div class="mongo-progress skill-font">Express.js</div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col align-self-center">
+                  <div class="beat-progress skill-font">Talking to cat</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Service -->
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio sec-pad">
+      <!-- Section title -->
+      <div class="section-title text-center col-md-12">
+        <h1>My Project</h1>
+        <p>Some examples of my project.</p>
+      </div>
+
+      <div class="clearfix"></div>
+
+      <!-- Filters -->
+      <div class="works-filters clearfix">
+        <ul>
+          <li class="filter active" data-filter="all">All</li>
+          <li class="filter" data-filter=".web">Frontend Development</li>
+          <li class="filter" data-filter=".graphic">Backend Development</li>
+          <li class="filter" data-filter=".film">Full Stack Development</li>
+        </ul>
+      </div>
+
+      <!-- Works grid -->
+      <ul class="works clearfix">
+        <!-- Item 1 -->
+        <li class="portfolio-item mix all graphic" data-my-order="1">
+        </li>
+
+        <!-- Item 2 -->
+        <li class="portfolio-item mix all film" data-my-order="2">
+        </li>
+
+        <!-- Item 3 -->
+        <li class="portfolio-item mix all film" data-my-order="3">
+        </li>
+
+        <!-- Item 4 -->
+        <li class="portfolio-item mix all graphic" data-my-order="4">
+        </li>
+
+        <!-- Item 5 -->
+        <li class="portfolio-item mix all graphic" data-my-order="5">
+        </li>
+
+        <!-- Item 6 -->
+        <li class="portfolio-item mix all film" data-my-order="6">
+        </li>
+
+        <!-- Item 7 -->
+        <li class="portfolio-item mix all graphic" data-my-order="7">
+        </li>
+
+        <!-- Item 8 -->
+        <li class="portfolio-item mix all web" data-my-order="8">
+        </li>
+
+        <!-- Item 9 -->
+        <li class="portfolio-item mix all graphic" data-my-order="9">
+        </li>
+
+        <!-- Item 10 -->
+        <li class="portfolio-item mix all film" data-my-order="10">
+        </li>
+
+        <!-- Item 11 -->
+        <li class="portfolio-item mix all graphic" data-my-order="11">
+        </li>
+
+        <!-- Item 12 -->
+        <li class="portfolio-item mix all film" data-my-order="12">
+        </li>
+      </ul>
+    </section>
+
+    <!-- Contact Me -->
+    <section class="testimonials sec-pad alter-bg">
+        <!-- Section title -->
+        <div class="section-title text-center col-md-12">
+            <h1>Follow me!</h1>
+            <p class="gray">Email Address: lihexuan1@gmail.com</p>
+            <a class="social" href="https://www.linkedin.com/in/hexuanli/" target="_blank" title="LinkedIn">
+              <img src="./assets/image/linkedin-logo.png" height="50px" alt="LinkedIn Icon">
+            </a>
+            <a class="social" href="https://github.com/siennameow" target="_blank" title="Github">
+              <img src="./assets/image/github-logo.png" height="50px" alt="Github Icon">
+            </a>
+            <a class="social" href="https://www.instagram.com/lovemesienna/" target="_blank" title="Instagram">
+                <img src="./assets/image/ins-logo.png" height="50px" alt="Instagram Icon">
+              </a>
+        </div>
+
+        <div class="clearfix"></div>
+
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <!-- Social links -->
+          <div class="social-icon">
+            <a href="https://github.com/siennameow"
+              ><i class="fa fa-github"></i
+            ></a>
+          </div>
+
+          <!-- Copyright -->
+          <div class="copyright">
+            Copyright © 2022
+            <a href="#" target="_blank">Sienna Li</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
 </html>
