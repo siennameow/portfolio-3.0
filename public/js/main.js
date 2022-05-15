@@ -25,6 +25,32 @@ $(document).ready(function () {
   $(".menu li a").on("click", function (e) {
     $(".menu-btn-close").trigger("click");
   });
+
+  //project
+  $(".works-filters li").on("click", function (e) {
+    e.preventDefault();
+
+    var $that = $(this);
+
+    $(".works-filters li").removeClass("active");
+    $that.addClass("active");
+  });
+  
+  //Mixitup
+  if ($(".works").length > 0) {
+    var $works = document.querySelector(".works");
+    var mixer = mixitup($works);
+  }
+
+  //Lightbox
+  if (lightbox.length > 0) {
+    lightbox.option({
+      resizeDuration: 200,
+      wrapAround: true,
+      disableScrolling: true,
+      alwaysShowNavOnTouchDevices: true,
+    });
+  }
 });
 
 $(window).on("load", function () {
