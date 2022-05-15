@@ -1,0 +1,73 @@
+.container-fluid {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+.html-progress > svg {
+    display: block;
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.css-progress > svg {
+    display: block;
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.js-progress > svg {
+    display: block;
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.node-progress > svg {
+    display: block;
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.express-progress > svg {
+    display: block;
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.mongo-progress > svg {
+    display: block;
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+
+.blender-progress > svg {
+    display: block;
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.ae-progress > svg {
+    display: block;
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.premiere-progress > svg {
+    display: block;
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.beat-progress > svg {
+    display: block;
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.align-self-center {
+    max-width: 250px;
+    margin: 0 auto;
+}
