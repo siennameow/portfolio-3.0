@@ -21,7 +21,7 @@ app.get("/", function(req, res){
 
 //GET /blog route go to the blog page
 app.get("/blog", function(req, res){
-  res.redirect(200, "");
+  res.redirect(200, "https://medium.com/@siennameow");
 });
 
 //GET /downloads render the resume download.
