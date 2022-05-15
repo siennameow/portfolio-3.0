@@ -360,34 +360,83 @@ $(document).ready(function () {
   });
 
   //project function
-		$(".works-filters li").on("click", function(e) {
-			e.preventDefault();
+  $(".works-filters li").on("click", function (e) {
+    e.preventDefault();
 
-			var $that = $(this);
+    var $that = $(this);
 
-			$(".works-filters li").removeClass("active");
-			$that.addClass("active");
-		});
+    $(".works-filters li").removeClass("active");
+    $that.addClass("active");
+  });
 
-		//Mixitup
-		if ($(".works").length>0) {
-			var $works = document.querySelector(".works");
-			var mixer = mixitup($works);
-		}
+  //Mixitup
+  if ($(".works").length > 0) {
+    var $works = document.querySelector(".works");
+    var mixer = mixitup($works);
+  }
 
-		//Lightbox
-	    if(lightbox.length>0) {
-	        lightbox.option({
-	          "resizeDuration":200,
-	          "wrapAround":true,
-	          "disableScrolling":true,
-	          "alwaysShowNavOnTouchDevices":true
-	        });
-		}
+  //Lightbox
+  if (lightbox.length > 0) {
+    lightbox.option({
+      resizeDuration: 200,
+      wrapAround: true,
+      disableScrolling: true,
+      alwaysShowNavOnTouchDevices: true,
+    });
+  }
 
-	    
-     new WOW().init();
+  new WOW().init();
 
+  // Menu click scroll
+
+  $(document).on("scroll", onScroll);
+
+  $(".menu li a, .scroll-btn a[href^='#']").on("click", function (e) {
+    // e.preventDefault();
+    $(document).off("scroll");
+
+    $("a").each(function () {
+      $(this).removeClass("active");
+    });
+
+    $(this).addClass("active");
+
+    var target = this.hash;
+    var $target = $(target);
+
+    $("html, body")
+      .stop()
+      .animate(
+        {
+          scrollTop: $target.offset().top + 2,
+        },
+        500,
+        "swing",
+        function () {
+          window.location.hash = target;
+          $(document).on("scroll", onScroll);
+        }
+      );
+  });
+
+  function onScroll(event) {
+    var pos = $(document).scrollTop();
+
+    $(".menu a").each(function () {
+      var that = $(this);
+      var target = $(that.attr("href"));
+
+      if (
+        target.position().top <= pos &&
+        target.position().top + target.height() > pos
+      ) {
+        $(".menu li a").removeClass("active");
+        that.addClass("active");
+      } else {
+        that.removeClass("active");
+      }
+    });
+  }
 });
 
 $(window).on("load", function () {
