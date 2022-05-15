@@ -389,7 +389,7 @@ $(document).ready(function () {
 
   // Menu click scroll
 
-  $(document).on("scroll", onScroll);
+  // $(document).on("scroll", onScroll);
 
   $(".menu li a, .scroll-btn a[href^='#']").on("click", function (e) {
     // e.preventDefault();
@@ -413,30 +413,30 @@ $(document).ready(function () {
         500,
         "swing",
         function () {
-          window.location.hash = target;
-          $(document).on("scroll", onScroll);
+          // window.location.hash = target;
+          // $(document).on("scroll", onScroll);
         }
       );
   });
 
-  function onScroll(event) {
-    var pos = $(document).scrollTop();
+  // function onScroll(event) {
+  //   var pos = $(document).scrollTop();
 
-    $(".menu a").each(function () {
-      var that = $(this);
-      var target = $(that.attr("href"));
+  //   // $(".menu a").each(function () {
+  //   //   // var that = $(this);
+  //   //   // var target = $(that.attr("href"));
 
-      if (
-        target.position().top <= pos &&
-        target.position().top + target.height() > pos
-      ) {
-        $(".menu li a").removeClass("active");
-        that.addClass("active");
-      } else {
-        that.removeClass("active");
-      }
-    });
-  }
+  //   //   // if (
+  //   //   //   target.position().top <= pos &&
+  //   //   //   target.position().top + target.height() > pos
+  //   //   // ) {
+  //   //   //   $(".menu li a").removeClass("active");
+  //   //   //   that.addClass("active");
+  //   //   // } else {
+  //   //   //   that.removeClass("active");
+  //   //   // }
+  //   // });
+  // }
 });
 
 $(window).on("load", function () {

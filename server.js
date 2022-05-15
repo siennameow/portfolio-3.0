@@ -19,16 +19,5 @@ app.get("/", function(req, res){
   res.sendFile(path.join(__dirname, 'public/index.html'));
 });
 
-//GET /blog route go to the blog page
-app.get("/blog", function(req, res){
-  res.redirect(200, "https://medium.com/@siennameow");
-});
-
-//GET /downloads render the resume download.
-app.get("/downloads", function(req, res){
-  res.download('downloads/resume-siennali.pdf');
-
-});
-
 // Listener
 app.listen(PORT, () => console.log(`App listening on PORT ${PORT}`));
