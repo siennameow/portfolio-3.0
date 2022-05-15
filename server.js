@@ -26,7 +26,7 @@ app.get("/blog", function(req, res){
 
 //GET /downloads render the resume download.
 app.get("/downloads", function(req, res){
-  res.download('');
+  res.download('downloads/resume-siennali.pdf');
 
 });
 
