@@ -10,7 +10,7 @@ Hello there! I'm a web developer and designer based in San Francisco Bay Area. H
 
 This Portfolio website is deployed on Heroku: https://sienna-portfolio3.herokuapp.com/
 
-This portfolio website is built up with [express.js](https://expressjs.com/) routes serving up and static HTML Pages. Core skills including: HTML, CSS, Javascript, Bootstrap and jQuery. It presentes with introduction, projects, and contact information about me. You can also download my resume. It is designed to work with different screen sizes as you need. 
+This portfolio website is built up with [express.js](https://expressjs.com/) routes serving up HTML Pages. Core skills including: HTML, CSS, Javascript, Bootstrap and jQuery. It presentes with introduction, projects, and contact information about me. You can also download my resume. It is designed to work with different screen sizes as you need. 
 
 
 ## Table of Contents 📖
@@ -90,7 +90,7 @@ If you want to use the template to create your own portfolio, you can :
 
 * **Sienna Li** 
 
-- [Portfolio](#)
+- [Portfolio](https://sienna-portfolio3.herokuapp.com/)
 - [Github](https://github.com/siennameow)
 - [LinkedIn](https://www.linkedin.com/in/hexuanli/)
 
