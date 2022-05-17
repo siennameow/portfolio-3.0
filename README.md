@@ -90,6 +90,7 @@ If you want to use the template to create your own portfolio, you can :
 
 * **Sienna Li** 
 
+- Email: lihexuan1@gmail.com
 - [Portfolio](https://sienna-portfolio3.herokuapp.com/)
 - [Github](https://github.com/siennameow)
 - [LinkedIn](https://www.linkedin.com/in/hexuanli/)
